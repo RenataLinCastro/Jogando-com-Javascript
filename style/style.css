@@ -38,12 +38,12 @@
 }
 
 .jump{
-    animation: mario-jump 500ms ease-out;
+    animation: jump 500ms ease-out;
 }
 
-@keyframes mario-jump {
+@keyframes jump {
     0%{
-        bottom: 0;
+        bottom: 1;
     }
 
     40%{
@@ -66,13 +66,13 @@
 .clouds{
     position: absolute;
     width: 550px;
-    animation: clouds-animation 10s infinite linear;
+    animation: clouds-animation 20s infinite linear;
 }
 
 
 @keyframes clouds-animation {
     from {
-        right: 0;
+        right: -550px;
     }
 
     to {
